@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% for entry in entries %}
+
+<p>Tiêu đề :  {{ entry.title }}</p>
+<p>Nội dung bài viết :  {{ entry.content }}</p>
+
+{% endfor %}
+
+{% endblock %}
